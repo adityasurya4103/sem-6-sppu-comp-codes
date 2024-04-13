@@ -1,0 +1,29 @@
+<apex:page controller="Calculator">
+    <apex:form>
+        <apex:pageMessages />
+	 	<div style="margin-bottom: 10px;">
+        <label for="firstNumber">Number 1:</label>
+        <apex:inputText id="firstNumber" value="{!firstNumber}" />
+        </div>
+		<div style="margin-bottom: 10px;">
+        <label for="secondNumber">Number 2:</label>
+        <apex:inputText id="secondNumber" value="{!secondNumber}" />
+        </div>
+        <div style="margin-top: 10px;">
+        <apex:commandButton value="Divide" action="{!Division}" rerender="resultPanel" />
+        <apex:commandButton value="Addition" action="{!Addition}" rerender="resultPanel" />
+        <apex:commandButton value="Subtraction" action="{!Subtraction}" rerender="resultPanel" />
+        <apex:commandButton value="Multiplication" action="{!Multiplication}" rerender="resultPanel" />
+        </div>
+	    <div style="margin-top: 10px;">
+        <apex:outputPanel id="resultPanel">
+            <apex:outputPanel rendered="{!NOT(ISBLANK(result))}">
+              <span style="font-weight: bold;">Result:</span> {!result}
+            </apex:outputPanel>
+            <apex:outputPanel rendered="{!NOT(ISBLANK(errorMessage))}">
+                <apex:pageMessage severity="error" summary="{!errorMessage}" />
+            </apex:outputPanel>
+        </apex:outputPanel>
+        </div>
+    </apex:form>
+</apex:page>

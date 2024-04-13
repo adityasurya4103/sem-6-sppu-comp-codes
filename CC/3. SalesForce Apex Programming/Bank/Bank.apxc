@@ -1,0 +1,32 @@
+public class Bank {
+    public Decimal balance { get; set; }
+    public Decimal amount { get; set; }
+    public String message { get; set; }
+
+    public Bank() {
+        // Initialize balance to 0
+        balance = 0;
+    }
+
+    public void deposit() {
+        if (amount > 0) {
+            balance += amount;
+            message = 'Deposit successful!';
+        } else {
+            message = 'Invalid amount. Deposit amount must be greater than 0.';
+        }
+    }
+
+    public void withdraw() {
+        if (amount > 0 && amount <= balance) {
+            balance -= amount;
+            message = 'Withdrawal successful!';
+        } else {
+            message = 'Invalid amount or insufficient balance.';
+        }
+    }
+    
+    public void balance() {
+        message = 'Balance in the account: '+balance;
+	}
+}

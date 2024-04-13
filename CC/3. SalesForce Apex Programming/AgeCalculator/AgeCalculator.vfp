@@ -1,0 +1,23 @@
+<apex:page controller="AgeCalculator" docType="html-5.0">>
+    <apex:form>
+        <apex:pageBlock title="Age Calculator">
+            <apex:pageBlockSection>
+                <apex:pageMessages />
+
+                <label for="birthdate">Birthdate:</label>
+                <apex:input type="date" id="birthdate" value="{!birthdate}" required="true" />
+
+                <apex:commandButton value="Calculate Age" action="{!calculateAge}" rerender="resultPanel" />
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection title="Result" columns="1" id="resultPanel">
+                <apex:outputPanel rendered="{!showError}">
+                    <p style="color: red;">Invalid birthdate. Please enter a valid birthdate.</p>
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{!NOT(showError)}">
+                    <p>Your age is: {!result}</p>
+                </apex:outputPanel>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
