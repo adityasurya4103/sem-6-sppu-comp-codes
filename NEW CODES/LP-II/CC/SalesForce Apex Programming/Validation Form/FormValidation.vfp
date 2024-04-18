@@ -1,0 +1,19 @@
+<apex:page controller="FormValidation" showHeader="false" sidebar="false" > 
+    <apex:form style="align-items:center;"> 
+        <apex:pageMessages /> 
+        <div style="padding: 40px; width: 50%; background-color: #f2f2f2;"> 
+            <h2 style="margin-bottom: 10px;">Contact Form</h2> 
+            <p style="margin-bottom: 40px;">Please fill out the form below and we'll get back to you shortly.</p> 
+            <apex:pageBlock > 
+                <apex:pageBlockSection columns="1" > 
+                    <apex:inputText value="{!firstName}" label="First Name" required="true" style="width: 30%;" /> 
+                    <apex:inputText value="{!lastName}" label="Last Name" required="true" style="width: 30%;" /> 
+                    <apex:inputText value="{!email}" label="Email" required="true" style="width: 30%;" /> 
+                    <apex:inputText value="{!phone}" label="Phone" required="true" style="width: 30%;" /> 
+                </apex:pageBlockSection> <div style="text-align: center; margin-top: 20px;"> 
+                <apex:commandButton value="Submit" action="{!submit}" styleClass="my-button" /> 
+                </div> 
+            </apex:pageBlock> 
+        </div> 
+    </apex:form> 
+</apex:page>

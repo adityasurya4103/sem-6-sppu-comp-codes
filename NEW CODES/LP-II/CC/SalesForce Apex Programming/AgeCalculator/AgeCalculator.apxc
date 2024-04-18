@@ -1,0 +1,25 @@
+public class AgeCalculator {
+    public Date birthdate { get; set; }
+    public Integer result { get; set; }
+    public Boolean showError { get; set; }
+
+    public AgeCalculator() {
+        showError = false;
+    }
+
+    public void calculateAge() {
+        Date today = Date.today();
+        Integer years = today.year() - birthdate.year();
+        if (birthdate > today) {
+            showError = true;
+            result = null;
+        } else {
+            if (birthdate.month() > today.month() ||
+                (birthdate.month() == today.month() && birthdate.day() > today.day())) {
+                years--;
+            }
+            result = years;
+            showError = false;
+        }
+    }
+}

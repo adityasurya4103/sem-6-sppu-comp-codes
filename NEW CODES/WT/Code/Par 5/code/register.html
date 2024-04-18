@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Registration Form</title>
+ <style>
+   body {
+     font-family: Arial, sans-serif;
+     background-color: #f2f2f2;
+   }
+   form {
+     max-width: 500px;
+     margin: 0 auto;
+     padding: 20px;
+     background-color: #ffffff;
+     border-radius: 5px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   }
+   h1 {
+     text-align: center;
+     color: #444444;
+   }
+   h2 {
+     text-align: center;
+     color: #444444;
+   }
+   input[type="number"],
+   input[type="text"],
+   input[type="submit"] {
+     display: block;
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 20px;
+     border-radius: 3px;
+     box-sizing: border-box;
+     font-size: 16px;
+     border: 2px solid #cccccc;
+	  border-radius: 5px;
+	  padding: 10px;
+   }
+   input[type="submit"] {
+     background-color: #4CAF50;
+     color: #ffffff;
+     cursor: pointer;
+   }
+  
+   input[type="submit"]:hover {
+     background-color: #3e8e41;
+   }
+ </style>
+</head>
+<body>
+ <h1>Registration Form</h1>
+ <form action="register" method="post">
+   <label for="book_id">Book ID:</label>
+   <input type="number" name="book_id" required>
+  
+   <label for="book_title">Book Title:</label>
+   <input type="text" name="book_title" required>
+   <label for="book_author">Book Author:</label>
+   <input type="text" name="book_author" required>
+   <label for="book_price">Book Price:</label>
+   <input type="number" name="book_price" required>
+   <label for="quantity">Quantity:</label>
+   <input type="number" name="quantity" required>
+   <input type="submit" value="Register">
+ </form>
+</body>
+</html>

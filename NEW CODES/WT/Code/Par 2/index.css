@@ -1,0 +1,256 @@
+#title{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+/* containers*/
+
+.colored-section{
+    background-color: #6293c4;
+    color:#fff;
+}
+.container-fluid{
+    padding: 7% 15%;
+
+}
+#title .container-fluid{
+    padding: 3% 15% 7%;
+}
+.big-heading{
+font-family: 'Montserrat', sans-serif;
+font-size: 3rem;
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+    font-style: bold;
+}
+h2{
+    font-family: 'Montserrat';  
+    font-style: bold;
+    font-size: 3rem;
+    line-height:1.5 ;
+}
+
+p{
+    
+    color: #afafaf;
+}
+
+body{
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+/*Navigation Bar*/
+
+.navbar{
+    padding-bottom: 4.5rem;
+}
+
+.navbar-brand{
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    padding: 0 18px;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-family: 'Montserrat-Light', sans-serif;
+    color:#fff;
+}
+
+.download-button{
+margin: 5% 3% 5% 0%
+}
+
+/* Title Image */
+.title-image{
+    width: 60%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
+    
+}
+
+/* Features */
+#features{
+ padding: 7% 15%;
+ background-color: white;
+ position: relative;
+
+}
+
+.feature-box{
+   
+  padding: 5%;
+  
+}
+
+.icon{
+    color: #6293c4;
+    margin-bottom: 1rem;
+}
+
+.icon:hover{
+    color: #282828;
+}
+
+/* Testimonials Section */
+
+#testimonials{
+    padding: 7% 15%;
+    
+    background-color: #6293c4;
+    color: #fff; 
+}
+
+.testimonial-image{
+    width: 100px;
+    height: 80px;
+    border-radius: 100%;
+    margin: 10px;
+}
+
+#press{
+    background-color: #6293c4;
+    
+    padding-bottom: 3%;
+}
+
+.press-logo{
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+.carousel-item{
+    padding: 7% 15%;
+}
+
+/* pricing section */
+#pricing{
+    padding: 100px;
+    
+}
+
+.pricing-column{
+    padding: 3% 2%;
+}
+
+@media (max-width: 1028px) {
+    #title{
+        text-align: center;
+    }
+    .title-image{
+        position: static;
+        transform: rotate(0);
+    }
+    
+}
+
+#cta{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    padding: 7% 15%;
+}
+.text-bottom{
+    color: #fff;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+.bottom{
+    background-color: #6293c4;
+    
+    padding: 3% 15% 7%;
+
+}
+
+#footer{
+
+padding: 7% 15%;
+}
+
+/*footer social icons */
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left:0 !important;
+    padding: 0;
+}
+ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+}
+
+/*footer social icons */
+.social-network a.icoRss:hover {
+    background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+    background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+    background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+    background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+    background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+    background-color:#007bb7;
+}
+.social-network a.icoInstagram:hover {
+    background-color: orangered;
+}
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i, .social-network a.icoInstagram:hover i {
+    color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+    color:#44BCDD;
+}
+
+.social-circle li a {
+    display:inline-block;
+    position:relative;
+    margin:0 auto 0 auto;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+    text-align:center;
+    width: 50px;
+    height: 50px;
+    font-size:20px;
+}
+.social-circle li i {
+    margin:0;
+    line-height:50px;
+    
+}
+
+.social-circle li a:hover i, .triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.social-circle i {
+    color: black;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}

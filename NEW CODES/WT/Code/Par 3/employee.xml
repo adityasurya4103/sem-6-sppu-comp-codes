@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="employee.xsl"?>
+<!DOCTYPE company SYSTEM "employee.dtd">
+<company>
+    <employee>
+        <username>Akash123</username>
+        <password>akash123</password>
+        <firstname>Akash</firstname>
+        <lastname>Mete</lastname>
+        <gender>Male</gender>
+        <email>akashmete129@gmail.com</email>
+        <position>Software Developer</position>
+        <salary>9.5lpa</salary>
+        <contact>+91 7051794388</contact>
+    </employee>
+
+    <employee>
+        <username>AlexWest</username>
+        <password>alex123</password>
+        <firstname>Alex</firstname>
+        <lastname>West</lastname>
+        <gender>Female</gender>
+        <email>alex123@gmail.com</email>
+        <position>Software Developer</position>
+        <salary>8.5lpa</salary>
+        <contact>+91 9335784511</contact>
+    </employee>
+
+    <employee>
+        <username>BarryAllen</username>
+        <password>barry123</password>
+        <firstname>Barry</firstname>
+        <lastname>Allen</lastname>
+        <gender>Male</gender>
+        <email>barryallen@gmail.com</email>
+        <position>Frontend Developer</position>
+        <salary>7.5lpa</salary>
+        <contact>+91 7834918230</contact>
+    </employee>
+    <employee>
+        <username>JohnDoe</username>
+        <password>johndoe123</password>
+        <firstname>John</firstname>
+        <lastname>Doe</lastname>
+        <gender>Male</gender>
+        <email>johndoe@example.com</email>
+        <position>Marketing Manager</position>
+        <salary>12lpa</salary>
+        <contact>+91 9934671209</contact>
+    </employee>
+
+    <employee>
+        <username>JaneSmith</username>
+        <password>janesmith456</password>
+        <firstname>Jane</firstname>
+        <lastname>Smith</lastname>
+        <gender>Female</gender>
+        <email>janesmith@example.com</email>
+        <position>Human Resources Manager</position>
+        <salary>10lpa</salary>
+        <contact>+91 9091293801</contact>
+    </employee>
+
+    <employee>
+        <username>BobJohnson</username>
+        <password>bob123</password>
+        <firstname>Bob</firstname>
+        <lastname>Johnson</lastname>
+        <gender>Male</gender>
+        <email>bob.johnson@example.com</email>
+        <position>Software Engineer</position>
+        <salary>9lpa</salary>
+        <contact>+91 7722012983</contact>
+    </employee>
+
+</company>

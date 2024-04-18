@@ -1,0 +1,31 @@
+public class FormValidation {
+
+    public String firstName { get; set; }
+    public String lastName { get; set; }
+    public String email { get; set; }
+    public String phone { get; set; }
+
+    public void submit() {
+
+        // Perform form validation
+        if (String.isBlank(firstName)) {
+            ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.ERROR, 'First name is required.'));
+        }
+        if (String.isBlank(lastName)) {
+            ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.ERROR, 'Last name is required.'));
+        }
+        if (String.isBlank(email) || !Pattern.matches('[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}', email)) {
+            ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.ERROR, 'Please enter a valid email address.'));
+        }
+        if (String.isBlank(phone) || !Pattern.matches('\\d{10}', phone)) {
+            ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.ERROR, 'Please enter a valid phone number.'));
+        }
+
+        // If there are no validation errors, save the form data
+        if (ApexPages.getMessages().isEmpty()) {
+            // Code to save the form data
+            // ...
+            ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.INFO, 'Form submitted successfully!'));
+        }
+    }
+}

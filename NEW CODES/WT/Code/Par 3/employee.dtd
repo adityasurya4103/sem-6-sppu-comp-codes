@@ -1,0 +1,11 @@
+<!ELEMENT company (employee+)>
+<!ELEMENT employee (username,password,firstname,lastname,gender,email,position,salary,contact)>
+<!ELEMENT username (#PCDATA)>
+<!ELEMENT password (#PCDATA)>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT lastname (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT position (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>
+<!ELEMENT contact (#PCDATA)>
